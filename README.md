@@ -58,28 +58,6 @@ requirements.txt
 README.md
 ```
 
-## How to Run
-
-Clone the repository and navigate into the project folder. Install the required dependencies using pip install -r requirements.txt. Then run the main script using python src/genetic_algorithm.py. Once done, open the output/timetable.html file in any browser to view the generated timetable.
-
-## Team Members
-
-Rahul Kushwaha — Roll No. 2503310020  
-Kartikay Gautam — Roll No. 2503310028  
-Ritik Dadwal — Roll No. 2503310018  
-Abhay Gaur — Roll No. 2503310009  
-
-Program: M.Tech in Artificial Intelligence and Data Science, JIIT Noida
-
-## Supervisors
-
-Sayani Ghosal, Assistant Professor (Senior Grade), Dept. of CSE and IT, JIIT Noida  
-Kavita Pandey, Assistant Professor (Senior Grade), Dept. of CSE and IT, JIIT Noida
-
-## License
-
-This project is licensed under the MIT License.
-
 ## Institution
 
 Jaypee Institute of Information Technology, Noida  
