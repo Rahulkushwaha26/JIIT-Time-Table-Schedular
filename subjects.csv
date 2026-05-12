@@ -1,0 +1,13 @@
+subject_id,subject_name,credits,department,weekly_hours
+CS101,Soft Computing,3,AI&DS,3
+CS102,Soft Computing Lab,4,AI&DS,2
+CS103,Data Visualization,3,AI&DS,3
+CS104,Big Data Analytics,4,AI&DS,4
+CS105,Big Data Analytics Lab using Hadoop,3,AI&DS,2
+IOT101,Digital Forensics,4,AI&DS,3
+AI101,Deep Learning,3,AI&DS,3
+CS106,Project Based Learnig - I,3,AI&DS,4
+CS107,Text Analytics,3,AI&DS,3
+CS108,Performance Engineering Lab,4,AI&DS,2
+HSS101,English (Audit),3,AI&DS,2
+CS109,Software Engineering,3,AI&DS,3

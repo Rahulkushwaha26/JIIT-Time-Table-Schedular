@@ -1,0 +1,13 @@
+teacher_id,teacher_name,subjects,department,max_hours_per_week
+T01,Dr. Kavita Pandey,"CS101,CS102",AI&DS,8
+T02,Dr. Bhawna Saxena,CS103,AI&DS,8
+T03,Dr. Silki Kharaliya,IOT101,AI&DS,8
+T04,Dr. Sayani Ghoshal,CS102,AI&DS,8
+T05,Dr. Varun Srivastava,AI101,AI&DS,8
+T06,Dr. Sonal Saurabh,CS105,AI&DS,8
+T07,Dr. Asmita Yadav,CS104,AI&DS,8
+T08,Dr. Jasmin,CS108,AI&DS,8
+T09,Dr. Megha Rathi,CS106,AI&DS,8
+T10,Dr. Shikha Jain,CS107,AI&DS,8
+T11,Dr. Ekta Singh,HSS101,AI&DS,8
+T12,Dr. Amanpreet Kaur,CS109,AI&DS,8

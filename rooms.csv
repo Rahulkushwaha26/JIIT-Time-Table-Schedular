@@ -1,0 +1,10 @@
+room_id,room_name,capacity,room_type,building
+R101,FF1,60,Lecture,ABB1
+R102,FF2,45,Lecture,ABB1
+R103,FF6,30,Lecture,ABB1
+R104,CS10,50,Lecture,ABB1
+LAB1,CL306,30,Lab,ABB3
+LAB2,CL23,25,Lab,ABB1
+LAB3,CL302,30,Lab,ABB3
+AUD1,Auditorium,120,Lecture,ABB2
+SEM1,Seminar Hall 1,40,Seminar,ABB2
