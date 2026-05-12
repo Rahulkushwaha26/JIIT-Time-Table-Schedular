@@ -1,4 +1,4 @@
-# 🎓 JIIT Timetable Scheduler using Genetic Algorithm
+# JIIT Timetable Scheduler using Genetic Algorithm
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue?style=flat&logo=python)
 ![Algorithm](https://img.shields.io/badge/Algorithm-Genetic%20Algorithm-green?style=flat)
