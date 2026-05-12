@@ -50,5 +50,7 @@ README.md
 
 ## Institution
 Jaypee Institute of Information Technology, Noida
+
 Department of Computer Science and Engineering and Information Technology
+
 Major Project, M.Tech in Artificial Intelligence and Data Science, 2026
