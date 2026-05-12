@@ -39,12 +39,14 @@ data/
     teachers.csv
     rooms.csv
     sections.csv
+    
 src/
     genetic_algorithm.py
     fitness.py
     crossover.py
     mutation.py
     repair.py
+    
 output/
     timetable.html
 requirements.txt
