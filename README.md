@@ -1,166 +1,87 @@
 # JIIT Timetable Scheduler using Genetic Algorithm
 
-![Python](https://img.shields.io/badge/Python-3.x-blue?style=flat&logo=python)
-![Algorithm](https://img.shields.io/badge/Algorithm-Genetic%20Algorithm-green?style=flat)
-![Output](https://img.shields.io/badge/Output-Interactive%20HTML-orange?style=flat)
-![License](https://img.shields.io/badge/License-MIT-yellow?style=flat)
+## About the Project
 
-> An AI-powered automatic timetable generation system for the AI & Data Science department at **Jaypee Institute of Information Technology (JIIT), Noida** — built using Genetic Algorithm.
+University timetable scheduling is a complex optimization problem. Manually assigning teachers, subjects, classrooms, and time slots while satisfying multiple constraints is time-consuming and often leads to conflicts. This project automates the process using a Genetic Algorithm (GA) to generate a conflict-free timetable for the AI and Data Science department at Jaypee Institute of Information Technology, Noida.
 
----
+## How It Works
 
-## 📌 About the Project
+The system takes four CSV files as input — subjects, teachers, rooms, and sections — loaded using the Pandas library. Each complete timetable is treated as a chromosome and each class assignment (subject, teacher, room, day, time slot, section) is a gene. The GA evolves a population of timetable solutions over multiple generations until it finds a schedule with zero conflicts.
 
-University timetable scheduling is a complex combinatorial optimization problem. Assigning teachers, subjects, classrooms, and time slots while satisfying multiple hard constraints makes the search space astronomically large — making manual or exhaustive methods practically infeasible.
+## Features
 
-This system uses a **Genetic Algorithm (GA)** to automatically generate a **conflict-free timetable**, eliminating manual scheduling effort entirely.
+- No teacher is assigned to two classes at the same time
+- No room is double-booked
+- No section has overlapping classes
+- Only qualified teachers are assigned to their respective subjects
+- Uses tournament selection, single-point crossover, adaptive mutation, four-pass repair operator, and elitism
+- Generates 4 visualizations: fitness evolution, conflict reduction, room utilization, and teacher workload
+- Final timetable is exported as a standalone interactive HTML file
 
----
+## Dataset
 
-## ⚙️ How It Works
+The dataset is based on the actual JIIT AI and DS curriculum and includes 12 subjects, 12 teachers, 9 rooms, and 3 sections (AIDS-A Sem2, AIDS-B Sem2, AIDS-A Sem4). Each chromosome contains 102 genes.
 
-- Takes **4 structured CSV files** as input: `subjects`, `teachers`, `rooms`, and `sections` (loaded via Pandas)
-- Each complete timetable is represented as a **chromosome**
-- Each class assignment (subject + teacher + room + day + time slot + section) is a **gene**
-- The GA evolves a population of timetable solutions over generations until a conflict-free schedule is found
+## GA Parameters and Results
 
----
+Population size: 100  
+Maximum generations: 300  
+Crossover rate: 0.85  
+Mutation rate: 0.15 (adaptive)  
+Initial conflicts: approximately 43  
+Final conflicts: 0  
+Convergence: within 14 generations  
+Final fitness score: 1.0
 
-## ✅ Key Features
+## Tech Stack
 
-- **Hard Constraint Enforcement:**
-  - No teacher double-booking
-  - No room clashes
-  - No section overlaps
-  - Only qualified teachers assigned to their subjects
+Python 3, Pandas, NumPy, Matplotlib, Genetic Algorithm, HTML output
 
-- **GA Techniques Used:**
-  - Tournament Selection (k=5)
-  - Single-point Crossover
-  - Adaptive Mutation
-  - Four-pass Repair Operator
-  - Elitism
-
-- **4 Automated Visualizations:**
-  - Fitness evolution over generations
-  - Conflict reduction with adaptive mutation
-  - Room utilization
-  - Teacher workload distribution
-
-- **Output:** Fully interactive **standalone HTML timetable file**
-
----
-
-## 📊 Dataset
-
-| Entity    | Count |
-|-----------|-------|
-| Subjects  | 12    |
-| Teachers  | 12    |
-| Rooms     | 9     |
-| Sections  | 3 (AIDS-A Sem2, AIDS-B Sem2, AIDS-A Sem4) |
-| Genes/Chromosome | 102 |
-
-Dataset is based on the actual **JIIT AI&DS curriculum**.
-
----
-
-## 📈 Results
-
-| Parameter         | Value          |
-|-------------------|----------------|
-| Population Size   | 100            |
-| Max Generations   | 300            |
-| Crossover Rate    | 0.85           |
-| Mutation Rate     | 0.15 (adaptive)|
-| Initial Conflicts | ~43            |
-| Final Conflicts   | **0**          |
-| Convergence       | **14 generations** |
-| Final Fitness     | **1.0 (perfect)** |
-
----
-
-## 🛠️ Tech Stack
-
-- **Language:** Python 3.x
-- **Libraries:** Pandas, NumPy, Matplotlib
-- **Algorithm:** Genetic Algorithm
-- **Output Format:** Standalone HTML
-
----
-
-## 📁 Project Structure
+## Project Structure
 
 ```
-├── data/
-│   ├── subjects.csv
-│   ├── teachers.csv
-│   ├── rooms.csv
-│   └── sections.csv
-├── src/
-│   ├── genetic_algorithm.py
-│   ├── fitness.py
-│   ├── crossover.py
-│   ├── mutation.py
-│   └── repair.py
-├── output/
-│   └── timetable.html
-├── SC_Project_Report.docx
-├── requirements.txt
-└── README.md
+data/
+    subjects.csv
+    teachers.csv
+    rooms.csv
+    sections.csv
+src/
+    genetic_algorithm.py
+    fitness.py
+    crossover.py
+    mutation.py
+    repair.py
+output/
+    timetable.html
+SC_Project_Report.docx
+requirements.txt
+README.md
 ```
 
----
+## How to Run
 
-## 🚀 How to Run
+Clone the repository and navigate into the project folder. Install the required dependencies using pip install -r requirements.txt. Then run the main script using python src/genetic_algorithm.py. Once done, open the output/timetable.html file in any browser to view the generated timetable.
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/your-username/JIIT-Timetable-Scheduler.git
-   cd JIIT-Timetable-Scheduler
-   ```
+## Team Members
 
-2. **Install dependencies**
-   ```bash
-   pip install -r requirements.txt
-   ```
+Rahul Kushwaha — Roll No. 2503310020  
+Kartikay Gautam — Roll No. 2503310028  
+Ritik Dadwal — Roll No. 2503310018  
+Abhay Gaur — Roll No. 2503310009  
 
-3. **Run the scheduler**
-   ```bash
-   python src/genetic_algorithm.py
-   ```
+Program: M.Tech in Artificial Intelligence and Data Science, JIIT Noida
 
-4. **View the output**
-   - Open `output/timetable.html` in any browser
+## Supervisors
 
----
+Sayani Ghosal, Assistant Professor (Senior Grade), Dept. of CSE and IT, JIIT Noida  
+Kavita Pandey, Assistant Professor (Senior Grade), Dept. of CSE and IT, JIIT Noida
 
-## 👨‍💻 Team Members
+## License
 
-| Name | Roll Number | Program |
-|------|-------------|---------|
-| Rahul Kushwaha | 2503310020 | M.Tech AI & DS |
-| Kartikay Gautam | 2503310028 | M.Tech AI & DS |
-| Ritik Dadwal | 2503310018 | M.Tech AI & DS |
-| Abhay Gaur | 2503310009 | M.Tech AI & DS |
+This project is licensed under the MIT License.
 
----
+## Institution
 
-## 👩‍🏫 Supervisors
-
-- **Sayani Ghosal** — Assistant Professor (Senior Grade), Dept. of CSE & IT, JIIT Noida
-- **Kavita Pandey** — Assistant Professor (Senior Grade), Dept. of CSE & IT, JIIT Noida
-
----
-
-## 📄 License
-
-This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
-
----
-
-## 🏫 Institution
-
-**Jaypee Institute of Information Technology (JIIT), Noida**
-Department of Computer Science & Engineering and Information Technology
-*Major Project — M.Tech in Artificial Intelligence and Data Science (2026)*
+Jaypee Institute of Information Technology, Noida  
+Department of Computer Science and Engineering and Information Technology  
+Major Project, M.Tech in Artificial Intelligence and Data Science, 2026
