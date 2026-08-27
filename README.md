@@ -1,4 +1,4 @@
-#Intelligent JIIT-Timetable Scheduler using Genetic Algorithm
+# Intelligent JIIT-Timetable Scheduler using Genetic Algorithm
 
 ## About the Project
 University timetable scheduling is a complex optimization problem. Manually assigning teachers, subjects, classrooms, and time slots while satisfying multiple constraints is time-consuming and often leads to conflicts. This project automates the process using a Genetic Algorithm (GA) to generate a conflict-free timetable for the AI and Data Science department at Jaypee Institute of Information Technology, Noida.
